@@ -80,9 +80,9 @@ class Users_model extends CI_Model
 		$this->db->update('tbl_user');
 	}
 
-	public function getuser($fullname)
+	public function getuser($email)
 	{
-		$this->db->where('fullname', $fullname);
+		$this->db->where('email', $email);
 		$query = $this->db->get('tbl_user');
 		return $query->row();
 	}
@@ -92,5 +92,13 @@ class Users_model extends CI_Model
 		$this->db->where('id', $id);
 		$query = $this->db->get('tbl_user');
 		return $query->row();
+	}
+
+	public function newpass($new_password, $email)
+	{
+		$pasword_hash = password_hash($new_password, PASSWORD_DEFAULT);
+		$this->db->set('password', $pasword_hash);
+		$this->db->where('email', $email);
+		return $this->db->update('tbl_user');
 	}
 }

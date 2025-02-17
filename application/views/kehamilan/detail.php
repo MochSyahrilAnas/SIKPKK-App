@@ -3,7 +3,6 @@
 
   <!-- Page Heading -->
   <?php if ($kehamilan['status'] == 'Hamil') { ?>
-    <h3 class="mb-2 text-gray-800">Tables Cek Kehamilan</h3>
     <div class="row nt-2">
       <div class="col-4">
         <div class="card shadow mb-4">
@@ -98,7 +97,6 @@
 
     <!-- View Status Melahirkan -->
   <?php } else { ?>
-    <h3 class="mb-2 text-gray-800">Tables Kelahiran</h3>
     <div class="row nt-2">
       <div class="col-4">
         <div class="card shadow mb-4">

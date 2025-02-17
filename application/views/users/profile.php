@@ -36,7 +36,7 @@
                           <div class="col-md-9">
                             <div class="card-body">
                               <h3 class="card-title"><strong><?= $user['fullname'] ?></strong></h3>
-                              <p class="card-subtitle mb-4"><?= $user['email'] ?></p>
+                              <p class="card-subtitle mb-4"><small class="text-muted"><?= $user['email'] ?></small></p>
                               <p class="card-text"><?= $user['address'] ?></p>
                               <div class="dropdown-divider"></div>
                               <p class="card-text"><small class="text-muted">Member since <?= date('d F Y', $user['date_created']) ?></small></p>

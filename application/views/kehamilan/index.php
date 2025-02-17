@@ -1,10 +1,6 @@
 <!-- Begin Page Content -->
 <div class="container-fluid">
 
-  <!-- Page Heading -->
-  <h1 class="h3 mb-2 text-gray-800">Tables Kehamilan</h1>
-  <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis voluptatibus enim maxime voluptas placeat suscipit!</p>
-
   <!-- DataTales Example -->
   <div class="card shadow mb-4">
     <div class="card-header py-3">

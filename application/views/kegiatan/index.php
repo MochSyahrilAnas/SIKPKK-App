@@ -1,9 +1,6 @@
 <!-- Begin Page Content -->
 <div class="container-fluid">
 
-  <!-- Page Heading -->
-  <h3 class="mb-2 text-gray-800">Tables Kegiatan</h3>
-
   <?php if ($user['role_id'] == 1) { ?>
     <div class="row nt-2">
       <div class="col-6">
@@ -28,7 +25,7 @@
       <div class="col-6">
         <div class="card shadow mb-4">
           <div class="card-header py-3">
-            <h6 class="m-0 font-weight-bold text-primary">Data Kegiatan
+            <h6 class="m-0 font-weight-bold text-primary">DataTables Kegiatan PKK
             </h6>
           </div>
           <div class="card-body">
@@ -75,7 +72,7 @@
   <?php } else { ?>
     <div class="card shadow mb-4">
       <div class="card-header py-3">
-        <h6 class="m-0 font-weight-bold text-primary">Data Kegiatan
+        <h6 class="m-0 font-weight-bold text-primary">DataTables Kegiatan PKK
         </h6>
       </div>
       <div class="card-body">
@@ -103,8 +100,8 @@
                   <td><?= $no++  ?></td>
                   <td><?= $kgt['nama_kegiatan']  ?></td>
                   <td class="text-center">
-                    <a href="<?= base_url() ?>kegiatan/memberKgt/<?= $kgt['id_kegiatan'] ?>" class="btn btn-info btn-sm" data-bs-toggle="tooltip" title=DETAIL>
-                      <i class="fas fa-info-circle"></i>
+                    <a href="<?= base_url() ?>kegiatan/memberKgt/<?= $kgt['id_kegiatan'] ?>" class="btn btn-info btn-sm" data-bs-toggle="tooltip" title=MEMBER>
+                      <i class="fas fa-user"></i>
                     </a>
                   </td>
                 </tr>

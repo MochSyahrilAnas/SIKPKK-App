@@ -16,11 +16,19 @@
                   <h1 class="h4 text-gray-900">Sistem Informasi Kegiatan PKK</h1>
                   <span class="text-muted">Forgot your password ?</span>
                 </div>
-                <?= $this->session->flashdata('message') ?>
-                <form class="user" method="post" action="">
+                <?= $this->session->flashdata('msg') ?>
+                <form class="user" method="post" action="<?= base_url('auth/respass') ?>">
                   <div class="form-group">
-                    <input type="text" class="form-control form-control-user" id="email" name="email" placeholder="Email Address" value="<?= set_value('email') ?>">
+                    <input type="text" class="form-control form-control-user" id="email" name="email" placeholder="Email Address">
                     <?= form_error('email', '<small class="text-danger pl-3">', '</small>') ?>
+                  </div>
+                  <div class="form-group">
+                    <input type="password" class="form-control form-control-user" id="password1" name="password1" placeholder="New Password">
+                    <?= form_error('password1', '<small class="text-danger pl-3">', '</small>') ?>
+                  </div>
+                  <div class="form-group">
+                    <input type="password" class="form-control form-control-user" id="password2" name="password2" placeholder="Repeat Password">
+                    <?= form_error('password2', '<small class="text-danger pl-3">', '</small>') ?>
                   </div>
 
                   <button type="submit" name="submit" class="btn btn-primary btn-user btn-block">

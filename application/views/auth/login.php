@@ -16,7 +16,11 @@
                     <h1 class="h4 text-gray-900">Sistem Informasi Kegiatan PKK</h1>
                     <span class="text-muted">Login Page</span>
                   </div>
+
+                  <?= $this->session->flashdata('msg') ?>
+
                   <?= $this->session->flashdata('message') ?>
+
                   <form class="user" method="post" action="<?= base_url() ?>">
                     <div class="form-group">
                       <input type="text" class="form-control form-control-user" id="email" name="email" placeholder="Email Address" value="<?= set_value('email') ?>">
@@ -31,7 +35,7 @@
                     </button>
                     <hr>
                     <div class="text-center">
-                      <a class="small" href="<?= base_url() ?>auth/respass">Forgot Password?</a>
+                      <a class="small" href="<?= base_url() ?>auth/forgotpassword">Forgot Password?</a>
                     </div>
                     <div class="text-center">
                       <a class="small" href="<?= base_url() ?>auth/registration">Create an Account!</a>

@@ -134,7 +134,7 @@ class Users extends CI_Controller
 					$this->db->update('tbl_user');
 
 					$this->session->set_flashdata('msg', '<div class="alert alert-success" role="alert">
-					Password change!</div>');
+					Password Berhasil Diubah!</div>');
 					redirect('users/changepassword');
 				}
 			}
@@ -183,7 +183,7 @@ class Users extends CI_Controller
 		$mail->addReplyTo('syahrilanas09@gmail.com', ''); //user email anda
 
 		$mail->Subject = 'Verifikasi Akun';
-		$mailContent = 'Akun Anda Telah Terverifikasi">Verifikasi</a>';
+		$mailContent = 'Akun Anda Telah Terverifikasi <br> Silahkan Login';
 
 		// Email subject
 		// $mail->Subject = 'test'; //subject email
